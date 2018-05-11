@@ -18,11 +18,17 @@ Optimization Toolbox™ provides functions for finding parameters that minimize 
 而 Global Optimization工具箱的描述为：
 <blockquote>
   Solve multiple maxima, multiple minima, and nonsmooth optimization problems
+  
   求解多元极大值，多元极小值，和非平滑优化问题
+  
   Global Optimization Toolbox provides methods that search for global solutions to problems that contain multiple maxima or minima. It includes global search, multistart, pattern search, genetic algorithm, and simulated annealing solvers. You can use these solvers to solve optimization problems where the objective or constraint function is continuous, discontinuous, stochastic, does not possess derivatives, or includes simulations or black-box functions with undefined values for some parameter settings.
+  
   全局优化工具箱Global Optimization Toolbox提供了一些用于搜索包含多元极大值或多元极小值全局解的方法。包括全局搜索，多起点方法，模式搜索，遗传算法，和模拟退火求解器。你可以使用这些求解器去解决优化问题，目标函数或约束条件可以是连续，不连续，随机化，不可导，或包括仿真或在某些参数设置中存在未定义值的黑箱函数。
+  
   Genetic algorithm and pattern search solvers support algorithmic customization. You can create a custom genetic algorithm variant by modifying initial population and fitness scaling options or by defining parent selection, crossover, and mutation functions. You can customize pattern search by defining polling, searching, and other functions.
+  
   遗传算法和模式搜索求解器支持个性化算法。你可以通过修正初始群体和拟合尺度选项，或者定义父代选择，交叉重组，和突变函数来创建一个个性化的遗传算法变量。你可以通过定义聚合，搜索和其他函数的方式来个性化的进行模式搜索。
+  
 <H3>Key Features</H3>
  <ul>
 <li>Interactive tools for defining and solving optimization problems and monitoring solution progress</li>
