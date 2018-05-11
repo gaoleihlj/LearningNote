@@ -3,7 +3,7 @@ MATLAB 中包括 Optimization 和 Global Optimization两个优化工具箱,其�
 <blockquote>
 Optimization Toolbox™ provides functions for finding parameters that minimize or maximize objectives while satisfying constraints. The toolbox includes solvers for linear programming, mixed-integer linear programming, quadratic programming, nonlinear optimization, and nonlinear least squares.  You can use these solvers to find optimal solutions to continuous and discrete problems, perform tradeoff analyses, and incorporate optimization methods into algorithms and applications.
   
-优化工具箱Optimization Toolbox™提供了一些函数用于搜索使满足约束条件的对象最大化或最小化的参数。工具箱中包括一些求解器，用于线性规划，混合-整数线性规划，二次规划，非线性优化，和非线性最小二乘法。你可以使用这些求解器来搜索连续和离散问题的最优解，进行权衡分析，并且在算法和应用中嵌入优化方法。
+优化工具箱Optimization Toolbox™提供了一些函数，用于搜索使满足约束条件的目标对象最大化或最小化的参数。工具箱中包括一些求解器，用于线性规划，混合-整数线性规划，二次规划，非线性优化，和非线性最小二乘法。你可以使用这些求解器来搜索连续和离散问题的最优解，进行权衡分析，并且在算法和应用中嵌入优化方法。
 
 <H3>Key Features</H3>
 <ul>
