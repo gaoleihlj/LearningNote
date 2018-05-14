@@ -1,4 +1,6 @@
 
+## MATLAB优化工具箱简介
+
 MATLAB 中包括 Optimization 和 Global Optimization两个优化工具箱,其中 Optimization 的描述为:
 <blockquote>
 Optimization Toolbox™ provides functions for finding parameters that minimize or maximize objectives while satisfying constraints. The toolbox includes solvers for linear programming, mixed-integer linear programming, quadratic programming, nonlinear optimization, and nonlinear least squares.  You can use these solvers to find optimal solutions to continuous and discrete problems, perform tradeoff analyses, and incorporate optimization methods into algorithms and applications.
@@ -44,4 +46,28 @@ Optimization Toolbox™ provides functions for finding parameters that minimize 
 
 总的来说，优化工具箱提供的方法倾向于获得局部最优解，而全局优化工具箱则更倾向于获得全局的最优解。
 
+## Optimization 工具箱学习笔记
 
+### 选择求解器（solver）
+在MATLAB文档中，提供了一个选择求解器表格，翻译如下：
+
+
+|       |线性   |二次  |最小二乘  |光滑非线性  |不光滑  |
+|:------|:-----|:-----|:--------|:----------|:------|
+|**无**|不成立，目标函数恒等或负无穷|quadprog, information|\\, lsqcurvefit, lsqnonlin, information|fminsearch, fminunc, information|fminsearsh, * |
+|**有界**|linprog, information|quadprog, information|lsqcurvefit, lsqlin, lsqnonlin, lsqnonneg, information|fminbnd, fmincon, fseminf, information|fminbnd, * |
+|**线性**|linprog, information|quadprog, information|lsqlin, information|fmincon, fseminf, information| * |
+|**一般光滑**|fmincon, information|fmincon, information|fmincon, information|fmincon, fseminf, information|* |
+|**离散**|intlinprog, information|* |* |* |* |
+
+其中行标签表示约束条件类型，列标签表示目标函数类型。需要注意的是
+ <ul>
+<li>* 表示在全局优化工具箱中有相应的求解器</li>
+<li>fmincon对多数受光滑约束条件的光滑目标函数都有效，但表中相应位置所列程通常序效率更高</li>
+<li>本表只是一个建议，并不限制用户的选择，例如，fmincon可以有效用于一些非光滑问题</li>
+<li>全局优化工具箱中的遗传算法函数ga能够处理混合整数规划问题</li>
+</ul>
+
+在选定求解器之后，有时还需要设定算法。接下来在函数的介绍部分来说明算法问题。
+
+### 定义目标函数和约束条件
