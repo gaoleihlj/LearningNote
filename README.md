@@ -1,2 +1,2 @@
 # LearningNote
-All the things that are  not so organized and systemic.
+Something here and something there.
